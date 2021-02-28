@@ -1,15 +1,24 @@
 /* Our features - Наши преимущества */
-
-.features-section{
-    display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
+.feature-list{
+    text-align: center;
 }
 
-.feature-list{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.features-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.feature-item{
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+    margin-bottom: 0px;
+    }
+
+    & .feature-text {
+        text-align: left;
+        }
 }
 
 .feature-icon{
@@ -21,15 +30,57 @@
     margin-bottom: 30px;
 }
 
-.feature-item{
-    min-width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
-
 .feature-text{
     @include font(14px, 400, 24px, 0.03em);
     color: var(--secondary-text-color);
 }
+
+// Для планшета
+
+@media screen and (min-width:768px) {
+
+    .feature-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .feature-item{
+        max-width: 354px;
+        margin-right:30px;
+        margin-left: 0;
+    }
+
+    .feature-text{
+        text-align: left;
+    }
+
+    &:nth-child(2n) {
+        margin-right: 0px;
+        }
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+        }
+}
+
+// Для экрана
+
+@media screen and (min-width:1200px) {
+    .feature-item{
+        &:not(:last-child) {
+            margin-right: 30px;
+    }
+        
+}
+
+    .feature-list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .features-section{
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+}
+
