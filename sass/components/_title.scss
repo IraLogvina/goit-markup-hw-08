@@ -1,11 +1,5 @@
 
-.what-we-do-title{
-    margin-bottom: 50px;
-    font-style: normal;
-    @include font(36px, 700, 42px, 0.03em);
-    text-align: center;
-    color: var(--primary-text-color);
-}
+
 
 .our-team-title {
     margin-bottom: 50px;
@@ -23,9 +17,4 @@
     color: var(--primary-text-color);
 }
 
-.feature-title{
-    margin-bottom: 10px;
-    @include font(14px, 700, 16px, 0.03em);
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-}
+

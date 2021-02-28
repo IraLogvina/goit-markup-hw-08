@@ -1,5 +1,19 @@
 /* What we do - Чем мы занимаемся */
 
+@media screen and (max-width:1199px) {
+    .what-we-do {
+        display: none;
+    }
+}
+
+.what-we-do-title{
+    margin-bottom: 50px;
+    font-style: normal;
+    @include font(36px, 700, 42px, 0.03em);
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
 .what-we-do{
     padding-bottom: 94px;
 }

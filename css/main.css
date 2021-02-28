@@ -162,17 +162,6 @@ body {
   color: var(--white-text-color);
 }
 
-.what-we-do-title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.167;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
-}
-
 .our-team-title {
   margin-bottom: 50px;
   font-style: normal;
@@ -192,16 +181,6 @@ body {
   line-height: 1.167;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--primary-text-color);
-}
-
-.feature-title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
@@ -260,9 +239,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-item {
@@ -487,6 +469,15 @@ body {
     margin-right: 30px;
     margin-left: 0;
   }
+  .feature-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
   .feature-text {
     text-align: left;
   }
@@ -513,9 +504,35 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .feature-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
 }
 
 /* What we do - Чем мы занимаемся */
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
+.what-we-do-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
 .what-we-do {
   padding-bottom: 94px;
 }
@@ -560,10 +577,26 @@ body {
   padding-bottom: 94px;
 }
 
-.our-team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.our-team-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .our-team-item {
@@ -573,16 +606,35 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .our-team-item {
+    max-width: 480px;
+  }
+  .our-team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .our-team-item .image {
-  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-item {
+    width: 270px;
+    margin: 15px;
+  }
 }
 
 .team-card {
-  padding: 30px 30px;
+  padding: 24px 24px;
 }
 
 /* Our team members - Члены нашей команды */
