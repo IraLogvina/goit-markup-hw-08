@@ -1,0 +1,28 @@
+
+.hero-button{    
+    @include font (16px, 700, 30px, 0.06em);
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    display: inline-block;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    @include transition();
+}
+
+.footer-button{
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    @include font (16px, 700, 30px, 0.06em);
+    text-transform: capitalize;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    @include transition();
+}

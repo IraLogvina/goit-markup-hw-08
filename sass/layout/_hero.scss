@@ -1,0 +1,27 @@
+/* Hero section - Секция Герой */
+
+.hero-section{
+    text-align: center;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)),
+        
+    url("../images/img-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-background-color);
+}
+
+.hero-title{
+    font-style: normal;
+    @include font(44px, 600px, 60px, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 30px;
+}

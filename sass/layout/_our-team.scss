@@ -1,0 +1,47 @@
+/* Our team - Наша команда */
+
+.our-team{
+    background: var(--secondary-backgroud-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-team-list{
+    display: flex;
+}
+
+.our-team-item{
+    background-color: var(--white-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    & .image{
+        display: block;
+    }
+
+}
+
+.team-card{
+    padding: 30px 30px;
+}
+
+/* Our team members - Члены нашей команды */
+
+.person-title{
+    margin-bottom: 10px;
+    font-style: normal;
+    @include font(16px, 500, 19px, 0.03em);
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.person-text{
+    margin-bottom: 16px;
+    @include font(16px, 400, 19px, 0.03em);
+    text-align: center;
+    color: var(--secondary-text-color);
+}

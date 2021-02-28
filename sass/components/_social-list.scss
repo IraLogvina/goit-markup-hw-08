@@ -1,0 +1,39 @@
+/* Социальные сети */
+
+.social-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-item{
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-link{
+    @extend %align;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: currentColor;
+    color: var(--social-links-main-color);
+    @include transition();
+
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        fill: var(--white-text-color);
+    }
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+}
+
+

@@ -1,0 +1,35 @@
+/* Logo WebStudio - Оформление логотипа */
+
+.logo{
+    font-family: var(--logo-font);
+    font-style: normal;
+    @include font (26px, 700, 31px, 0.03em);
+    color: var(--accent-color);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: var(--accent-color);
+    }
+
+
+    .footer & {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0 0 0 0;
+}
+
+}
+
+.logo-studio{
+    color: var(--primary-text-color);
+}
+
+.logo-studio-footer{
+    color: var(--white-text-color);
+}
+
+

@@ -1,0 +1,35 @@
+/* Our features - Наши преимущества */
+
+.features-section{
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.feature-icon{
+    @extend %align;
+    width: 100%;
+    height: 120px;
+    background-color: var(--secondary-backgroud-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.feature-item{
+    min-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.feature-text{
+    @include font(14px, 400, 24px, 0.03em);
+    color: var(--secondary-text-color);
+}
