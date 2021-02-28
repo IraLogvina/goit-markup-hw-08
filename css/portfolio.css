@@ -148,7 +148,7 @@ body {
   overflow: hidden;
 }
 
-.worktype-filters, .social-link-footer, .footer-form, .footer-input {
+.worktype-filters, .social-links-list-footer, .social-link-footer, .footer-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ body {
 }
 
 .footer .logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   padding: 0 0 0 0;
 }
@@ -398,12 +398,6 @@ body {
   height: 44px;
 }
 
-.social-links-list-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .social-list-item-footer:not(:last-child) {
   margin-right: 10px;
 }
@@ -434,6 +428,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+
+.footer-form {
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {

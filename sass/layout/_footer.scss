@@ -52,7 +52,7 @@
 }
 
 .social-links-list-footer{
-    display: flex;
+    @extend %align;
 }
 
 .social-list-item-footer:not(:last-child) {
@@ -102,7 +102,7 @@
 // } 
 
 .footer-form{
-    @extend %align;
+    text-align: center;
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: center;
