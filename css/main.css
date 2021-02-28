@@ -413,6 +413,7 @@ body {
 
 /* Hero section - Секция Герой */
 .hero-section {
+  max-width: 480px;
   text-align: center;
   padding: 200px 0;
   margin-left: auto;
@@ -435,6 +436,44 @@ body {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-devise-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero-section {
+    background-image: url("../images/mob/mob_hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-image: url("../images/tablet/tablet_hero.jpg");
+  }
+  .hero-title {
+    padding: 0 186px;
+  }
+}
+
+@media screen and (min-devise-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: url("../images/tablet/tablet_hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1200px;
+    background-image: url("../images/desctop/desctop_hero.jpg");
+  }
+  .hero-title {
+    padding: 0 186px;
+  }
+}
+
+@media screen and (min-devise-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-image: url("../images/desctop/desctop_hero@2x.jpg");
+  }
 }
 
 /* Our features - Наши преимущества */
