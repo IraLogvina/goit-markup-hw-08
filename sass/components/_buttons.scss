@@ -14,7 +14,9 @@
 
 .footer-button{
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
     padding: 10px 29px;
     @include font (16px, 700, 30px, 0.06em);
     text-transform: capitalize;
