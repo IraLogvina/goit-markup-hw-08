@@ -417,8 +417,8 @@ body {
   padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient-color)), to(var(--hero-gradient-color))), url("../images/img-hero.jpg");
-  background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/img-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient-color)), to(var(--hero-gradient-color))), url("../images/mob/mob_hero.jpg");
+  background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/mob/mob_hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -971,7 +971,7 @@ body {
   width: 16px;
   height: 15px;
   background-color: var(--accent-color);
-  background-image: url("../images/icon-check.svg");
+  background-image: url("../images/svg/icon-check.svg");
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: contain;
