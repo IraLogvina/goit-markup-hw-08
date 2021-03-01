@@ -26,9 +26,9 @@
     color: var(--white-text-color);
     margin-bottom: 30px;
 }
-@media screen and (min-devise-pixel-ratio: 2) and (min-width: 480px),
-    screen and (min-resolution: 192dpi) and (min-width: 480px),
-    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-devise-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
         .hero-section {
     background-image: url("../images/mob/mob_hero@2x.jpg");
     }
