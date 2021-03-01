@@ -41,6 +41,7 @@
     background-color: var(--white-text-color);
     cursor: pointer;
     @include transition();
+
 }
 
 .button-close .icon-close{
