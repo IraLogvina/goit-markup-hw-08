@@ -363,6 +363,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow: auto;
     -webkit-transition: -webkit-transform 500ms linear;
     transition: -webkit-transform 500ms linear;
     transition: transform 500ms linear;
