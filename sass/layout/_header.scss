@@ -1,13 +1,13 @@
 // Стили для мобильного
-.header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+// .header {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+// }
 
-.logo {
-    width: 134px;
-    height: 28px;
-}
+// .logo {
+//     width: 134px;
+//     height: 28px;
+// }
 
 @media screen and (max-width: 767px) {
     .nav-list {
@@ -21,7 +21,7 @@
     .burger-btn,
     .button-close {
         background-color: transparent;
-        border: 2px solid salmon;
+        border: none;
         padding: 0;
     }
 
@@ -31,8 +31,8 @@
         height: 40px;
     }
 
-    .burger-icon {
-        fill: var(--secondary-text-color);
+    .burger-icon{
+        fill: var(--primary-text-color);
     }
 
     .mobile-close-btn {
@@ -70,10 +70,117 @@
         
         color: #2196F3;
         }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu,
+    .burger-btn{
+        display: none;
+    }
+
+    .nav-info,
+    .nav-list,
+    .nav-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .nav-list{
+        margin: 0 0 0 88px;
+    }
+
+    .nav-list-item{
+        margin-left: 50px;
+        display: block;
+
+        &:last-child{
+            margin-left: 50px;
+            }
+            &.current::after,
+            &:hover::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 4px;
+                border-radius: 3px;
+                margin: 0 auto;
+                background-color: var(--accent-color);
+                opacity: 1;
+            }
+    
+            &:hover::after,
+            &:active::after{
+                opacity: 1;
+            }
+    }
 
 }
 
+    .nav-list-link{
+        display: flex;
+        font-style: normal;
+        @include font(14px, 500, 16px, 0.02em);
+        color: var(--primary-text-color);
+        text-decoration: none; 
+        padding-top: 32px;
+        padding-bottom: 32px;
+        align-items: center;
+        @include transition();
+        &:hover,
+        &:active,
+        &:focus {
+            color: var(--accent-color);
+}
 
+        &.current {
+            color: var(--accent-color);
+        }
+}
+
+    /* Contacts - Контакты */
+
+.contacts-list{
+    flex-direction: column;
+    margin-left: 30px;
+    @include font(12px, 500, 14px, 0.02em);
+    color: var(--contacts-color);
+    text-decoration: none; 
+}
+
+.contacts-icon {
+    display: block;
+    margin-right: 10px;
+}
+
+.contacts-list-item{
+    margin-bottom: 10px;
+}
+
+.contacts-list-link {
+    display: flex;
+    align-items: center;
+    @include font(12px, 500, 14px, 0.02em);
+    color: var(--secondary-text-color);
+    text-decoration: none; 
+    fill:currentColor;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    @include transition();
+
+    &:hover, 
+    &:active, 
+    &:focus{
+        color: var(--accent-color);
+}
+}
+
+
+@media screen and (min-width: 1200px){
+    .contacts-list{
+        display: flex;
+    }
+}
 
 // .header{
 //     border: 1px solid var(--border-color);
@@ -109,80 +216,9 @@
 
 // /* Подчеркивание текущей ссылки */
 
-//     &.current::after,
-//     &:hover::after{
-//         content: "";
-//         display: block;
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 3px;
-//         margin: 0 auto;
-//         background-color: var(--accent-color);
-//         opacity: 1;
+
+
+
 // }
 
-//     &:hover::after,
-//     &:active::after{
-//         opacity: 1;
-// }
-// }
-
-// .nav-list-link{
-//     display: flex;
-//     font-style: normal;
-//     @include font(14px, 500, 16px, 0.02em);
-//     color: var(--primary-text-color);
-//     text-decoration: none; 
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     align-items: center;
-//     @include transition()
-//     &:hover,
-//     &:active,
-//     &:focus {
-//         color: var(--accent-color);
-// }
-
-// /* Подсвечивание текущей ссылки */
-
-//     &.current {
-//         color: var(--accent-color);
-//     }
-// }
-
-// /* Contacts - Контакты */
-
-// .contacts-list{
-//     display: flex;
-//     margin: 0 0 0 auto;
-//     @include font(14px, 400, 24px, 0.03em);
-//     color: var(--contacts-color);
-//     text-decoration: none; 
-// }
-
-// .contacts-icon {
-//     margin-right: 10px;
-// }
-
-// .contacts-list-item{
-//     margin-right: 50px;
-// }
-
-// .contacts-list-link {
-//     display: flex;
-//     align-items: center;
-//     @include font(14px, 400, 16px, 0.02em);
-//     color: var(--secondary-text-color);
-//     text-decoration: none; 
-//     fill:currentColor;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     @include transition();
-
-//     &:hover, 
-//     &:active, 
-//     &:focus{
-//         color: var(--accent-color);
-// }
-// }
 
