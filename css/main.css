@@ -292,6 +292,10 @@ body {
   height: 20px;
 }
 
+.header {
+  border: 1px solid var(--border-color);
+}
+
 @media screen and (max-width: 767px) {
   .nav-list {
     display: none;
@@ -727,11 +731,10 @@ body {
 
 .feature-item {
   max-width: 100%;
-  margin-bottom: 30px;
 }
 
-.feature-item:last-child {
-  margin-bottom: 0px;
+.feature-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -751,6 +754,10 @@ body {
   .feature-item .feature-item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.feature-title {
+  margin-bottom: 10px;
 }
 
 .feature-text {

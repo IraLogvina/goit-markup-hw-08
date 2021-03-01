@@ -1,4 +1,8 @@
 
+.header{
+        border: 1px solid var(--border-color);
+}
+
 @media screen and (max-width: 767px) {
     .nav-list {
         display: none;
@@ -63,59 +67,59 @@
 
         @include font(40px, 500, 47px, 0.02em);
         text-align: left;
-        }
+    }
 
-        .mobile-menu-nav-link{
-            @include font(40px, 500, 47px, 0.02em);
-            color: var(--primary-text-color);
+    .mobile-menu-nav-link{
+        @include font(40px, 500, 47px, 0.02em);
+        color: var(--primary-text-color);
 
-            &.current {
-                color: var(--accent-color);
-            }
-        }
-        .mobile-menu-nav-item:not(:last-child){
-            margin-bottom: 32px;
-        }
-
-        .mobile-contacts-list-item:not(:last-child){
-            margin-bottom: 32px;
-        }
-
-        .mobile-contacts-list-link{
-            @include font(24px, 500, 28px, 0.02em);
-            color: var(--secondary-text-color);
-
-            &.current {
-                @include font(34px, 500, 40px, 0.02em);
-                color: var(--accent-color);
-            }
-        }
-
-        .mobile-social-list{
-            display: flex;
-            margin-top: 64px;
-        }
-
-        .mobile-social-list-item{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile-social-list-link{
-            @include font(18px, 500, 22px, 0.02em);
+        &.current {
             color: var(--accent-color);
         }
+    }
+    .mobile-menu-nav-item:not(:last-child){
+        margin-bottom: 32px;
+    }
 
-        .mobile-social-list-line{
-            width: 22px;
-            height: 0px;
-            left: 135px;
-            top: 726px;
+    .mobile-contacts-list-item:not(:last-child){
+        margin-bottom: 32px;
+    }
 
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
+    .mobile-contacts-list-link{
+        @include font(24px, 500, 28px, 0.02em);
+        color: var(--secondary-text-color);
+
+        &.current {
+            @include font(34px, 500, 40px, 0.02em);
+            color: var(--accent-color);
         }
+    }
+
+    .mobile-social-list{
+        display: flex;
+        margin-top: 64px;
+    }
+
+    .mobile-social-list-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-social-list-link{
+        @include font(18px, 500, 22px, 0.02em);
+        color: var(--accent-color);
+    }
+
+    .mobile-social-list-line{
+        width: 22px;
+        height: 0px;
+        left: 135px;
+        top: 726px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -184,7 +188,7 @@
     }
             /* Contacts - Контакты */
 
-.contacts-list{
+    .contacts-list{
     flex-direction: column;
     margin-left: 30px;
     @include font(12px, 500, 14px, 0.02em);
@@ -192,16 +196,16 @@
     text-decoration: none; 
 }
 
-.contacts-icon {
-    display: block;
-    margin-right: 10px;
+    .contacts-icon {
+        display: block;
+        margin-right: 10px;
 }
 
-.contacts-list-item{
+    .contacts-list-item{
     margin-bottom: 10px;
 }
 
-.contacts-list-link {
+    .contacts-list-link {
     display: flex;
     align-items: center;
     @include font(12px, 500, 14px, 0.02em);
@@ -216,7 +220,7 @@
     &:active, 
     &:focus{
         color: var(--accent-color);
-}
+    }
 }
 }
 
@@ -265,44 +269,4 @@
 }
 
 }
-
-// .header{
-//     border: 1px solid var(--border-color);
-// }
-
-// /* Выравние элементов шапки в одну линию */
-
-// .header-items{
-//     display: flex;
-//     align-items: center;
-// }
-
-// /* Navigation - Навигация по сайту */
-
-// .nav-info{
-//     @extend %align;
-// }
-
-// /* Оформление навигационного списка */
-
-// .nav-list{
-//     display: flex;
-//     margin: 0 0 0 93px;
-// }
-
-// .nav-list-item{
-//     margin-left: 50px;
-//     display: block;
-
-//     &:last-child{
-//         margin-left: 50px;
-//     }
-
-// /* Подчеркивание текущей ссылки */
-
-
-
-
-// }
-
 
