@@ -1,9 +1,10 @@
 /* Hero section - Секция Герой */
 
 .hero-section{
-    max-width: 480px;
+    max-width: 1600px;
+    height: 400px;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -13,14 +14,12 @@
         
     url("../images/mob/mob_hero.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-color: var(--main-background-color);
 }
 
 .hero-title{
-    font-style: normal;
-    @include font(44px, 600px, 60px, 0.06em);
+    @include font(26px, 900px, 42px, 0.06em);
     text-align: center;
     text-transform: uppercase;
     color: var(--white-text-color);
@@ -36,12 +35,15 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        max-width: 768px;
         background-image: url("../images/tablet/tablet_hero.jpg");
     }
 
     .hero-title {
-        padding: 0 186px;
+        @include font(26px, 900px, 42px, 0.06em);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--white-text-color);
+        margin-bottom: 30px;
     }
 }
 
@@ -54,13 +56,20 @@
 }
 
 @media screen and (min-width: 1200px) {
+
     .hero-section {
-        max-width: 1200px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         background-image: url("../images/desctop/desctop_hero.jpg");
     }
 
-    .hero-title {
-        padding: 0 186px;
+    .hero-title {    
+        @include font(44px, 600px, 60px, 0.06em);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--white-text-color);
+        margin-bottom: 30px;
     }
 }
 

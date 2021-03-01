@@ -608,24 +608,23 @@ body {
 
 /* Hero section - Секция Герой */
 .hero-section {
-  max-width: 480px;
+  max-width: 1600px;
+  height: 400px;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient-color)), to(var(--hero-gradient-color))), url("../images/mob/mob_hero.jpg");
   background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/mob/mob_hero.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   background-color: var(--main-background-color);
 }
 
 .hero-title {
-  font-style: normal;
-  font-size: 44px;
-  font-weight: 600px;
-  line-height: 1.364;
+  font-size: 26px;
+  font-weight: 900px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -641,11 +640,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
     background-image: url("../images/tablet/tablet_hero.jpg");
   }
   .hero-title {
-    padding: 0 186px;
+    font-size: 26px;
+    font-weight: 900px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 30px;
   }
 }
 
@@ -657,11 +662,20 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url("../images/desctop/desctop_hero.jpg");
   }
   .hero-title {
-    padding: 0 186px;
+    font-size: 44px;
+    font-weight: 600px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 30px;
   }
 }
 
