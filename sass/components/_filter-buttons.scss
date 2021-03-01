@@ -1,13 +1,25 @@
 
 .worktype-filters{
-    @extend %align;
-    margin-bottom: 50px;
-
+    // @extend %align;
+    // margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .worktype-filters-item{
     &:not(:last-child){
         margin-right: 8px;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 15px;
     }
 }
 
