@@ -212,8 +212,6 @@
     color: var(--secondary-text-color);
     text-decoration: none; 
     fill:currentColor;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     @include transition();
 
     &:hover, 

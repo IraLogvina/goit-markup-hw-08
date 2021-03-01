@@ -3,11 +3,11 @@
 .logo{
     font-family: var(--logo-font);
     font-style: normal;
-    @include font (26px, 700, 31px, 0.03em);
+    @include font (24px, 700, 28px, 0.03em);
     color: var(--accent-color);
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &:hover,
     &:focus,
@@ -15,6 +15,11 @@
         color: var(--accent-color);
     }
 
+    @media screen and (min-width: 1200px){
+        @include font (26px, 700, 31px, 0.03em);
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
     .footer & {
         display: inline-block;
