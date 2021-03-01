@@ -946,13 +946,21 @@ body {
 
 .our-clients-title {
   margin-bottom: 50px;
-  font-style: normal;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.167;
+  line-height: 1.179;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  }
 }
 
 .our-clients-list {
