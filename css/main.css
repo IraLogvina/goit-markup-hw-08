@@ -333,10 +333,9 @@ body {
     -webkit-transform: translateX(-50%) translateY(-100%);
             transform: translateX(-50%) translateY(-100%);
     padding: 48px 40px;
-    background: #FFFFFF;
+    background: var(--white-text-color);
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 21;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,7 +346,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    overflow: auto;
     -webkit-transition: -webkit-transform 500ms linear;
     transition: -webkit-transform 500ms linear;
     transition: transform 500ms linear;
