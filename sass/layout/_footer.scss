@@ -16,8 +16,6 @@
 
 .contacts-footer,
 .social-links-footer{
-    // margin-right: 70px;
-    // width: 231px;
 
     @media screen and (max-width: 1199px){
         margin-bottom: 60px;
@@ -41,10 +39,6 @@
         color: var(--accent-color);
     }
 }
-
-// .social-links-footer{
-//     width: 206px;
-// }
 
 .social-list-item-footer{
     width: 44px;
@@ -74,8 +68,8 @@
         color: var(--white-text-color);
         fill: var(--white-text-color);
 }
-
 }
+
 /* Подпишитесь на рассылку */
 
 .social-title-footer{
@@ -85,21 +79,6 @@
     text-transform: uppercase;
     color: var(--white-text-color);
 }
-
-// .footer-form-wrapper{
-//     text-align: center;
-//     justify-content: center;
-//         align-items: center;
-//     @media screen and (min-width: 1200px) {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         }
-// }
-
-// .email-send{
-//     margin-left: 93px;
-// } 
 
 .footer-form{
     text-align: center;

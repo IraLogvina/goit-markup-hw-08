@@ -2,11 +2,26 @@
 
 .feature-list{
     text-align: center;
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media screen and (min-width:1200px){
+        display: flex;
+        flex-wrap: nowrap;
+}
 }
 
 .features-section{
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 .feature-item{
@@ -14,13 +29,31 @@
     margin-bottom: 30px;
 
     &:last-child {
-    margin-bottom: 0px;
+        margin-bottom: 0px;
+        }
+
+    @media screen and (min-width:768px){
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
     }
 
-    & .feature-text {
-        text-align: left;
+    @media screen and (min-width:1200px) {
+        .feature-item{
+            @media screen and (min-width: 1200px) {
+                width: calc((100% - 4 * 30px) / 4);
+            }
+    
+            &:not(:last-child) {
+                margin-right: 30px;
         }
+            
+    }
 }
+}
+
+.feature-text {
+    text-align: left;
+    }
 
 .feature-icon{
     @extend %align;
@@ -36,63 +69,4 @@
     color: var(--secondary-text-color);
 }
 
-// Для планшета
-
-@media screen and (min-width:768px) {
-
-    .feature-list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .feature-item{
-        width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
-    }
-
-    .feature-title{
-        margin-bottom: 10px;
-        @include font(14px, 700, 16px, 0.03em);
-        text-transform: uppercase;
-        color: var(--primary-text-color);
-    }
-    
-    .feature-text{
-        text-align: left;
-    }
-}
-
-// Для экрана
-
-@media screen and (min-width:1200px) {
-    .feature-item{
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 4 * 30px) / 4);
-        }
-
-        &:not(:last-child) {
-            margin-right: 30px;
-    }
-        
-}
-
-    .feature-list{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .features-section{
-        padding-top: 94px;
-        padding-bottom: 94px;
-}
-
-.feature-title{
-    margin-bottom: 10px;
-    @include font(14px, 700, 16px, 0.03em);
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-}
-
-}
 

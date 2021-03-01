@@ -1,11 +1,10 @@
 
 .worktype-filters{
-    // @extend %align;
-    // margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
+        align-items: center;
         justify-content: center;
     }
     @media screen and (min-width: 1200px) {
