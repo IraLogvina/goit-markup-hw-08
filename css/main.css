@@ -574,7 +574,7 @@ body {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/desctop/desctop_hero.jpg");
+    background-image: url("../images/desktop/desktop_hero.jpg");
   }
   .hero-title {
     font-size: 44px;
@@ -590,7 +590,7 @@ body {
 
 @media screen and (min-devise-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-section {
-    background-image: url("../images/desctop/desctop_hero@2x.jpg");
+    background-image: url("../images/desktop/desktop_hero@2x.jpg");
   }
 }
 
