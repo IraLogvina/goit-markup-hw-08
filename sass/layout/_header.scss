@@ -11,7 +11,7 @@
     .contacts-list {
         display: none;
     }
-
+}
     .burger-btn{
         background-color: transparent;
         border: none;
@@ -72,8 +72,12 @@
     }
 
     .mobile-menu-nav-link{
-        @include font(40px, 500, 47px, 0.02em);
+        @include font(30px, 500, 47px, 0.02em);
         color: var(--primary-text-color);
+
+        @media screen and (min-width: 480px) {
+            font-size: 40px;
+        }
 
         &.current {
             color: var(--accent-color);
@@ -81,6 +85,7 @@
     }
     .mobile-menu-nav-item:not(:last-child){
         margin-bottom: 32px;
+
     }
 
     .mobile-contacts-list-item:not(:last-child){
@@ -88,12 +93,21 @@
     }
 
     .mobile-contacts-list-link{
-        @include font(24px, 500, 28px, 0.02em);
+        @include font(16px, 500, 28px, 0.02em);
         color: var(--secondary-text-color);
 
+        @media screen and (min-width: 480px) {
+            font-size: 24px;
+        }
+
+
         &.current {
-            @include font(34px, 500, 40px, 0.02em);
+            @include font(24px, 500, 40px, 0.02em);
             color: var(--accent-color);
+
+            @media screen and (min-width: 480px) {
+                font-size: 34px;
+            }
         }
     }
 
@@ -111,6 +125,10 @@
     .mobile-social-list-link{
         @include font(18px, 500, 22px, 0.02em);
         color: var(--accent-color);
+
+        @media screen and(max-width: 480px) {
+            font-size: 12px;
+        }
     }
 
     .mobile-social-list-line{
@@ -122,7 +140,7 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
     }
-}
+
 
 
 @media screen and (min-width: 768px) {
