@@ -35,7 +35,16 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        background-image: url("../images/tablet/tablet_hero.jpg");
+        background-image: 
+        linear-gradient(
+            to right,
+            var(--hero-gradient-color),
+            var(--hero-gradient-color)),
+
+        url("../images/tablet/tablet_hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--main-background-color);
     }
 
     .hero-title {
@@ -61,7 +70,16 @@
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: url("../images/desktop/desktop_hero.jpg");
+        background-image: 
+        linear-gradient(
+            to right,
+            var(--hero-gradient-color),
+            var(--hero-gradient-color)),
+        url("../images/desktop/desktop_hero.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--main-background-color);
     }
 
     .hero-title {    
