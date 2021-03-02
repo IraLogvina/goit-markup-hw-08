@@ -41,9 +41,9 @@
     }
 
     .mobile-menu {
-        position: absolute;
+        position: fixed;
         width: 100%;
-        max-width: 480px;
+        max-width: 767px;
         height: 100vh;
         top: 0;
         left: 50%;
@@ -68,6 +68,7 @@
 
         @include font(40px, 500, 47px, 0.02em);
         text-align: left;
+
     }
 
     .mobile-menu-nav-link{
