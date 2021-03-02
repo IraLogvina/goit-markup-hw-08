@@ -152,6 +152,7 @@ body {
   text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-right: 88px;
 }
 
 .logo:hover, .logo:focus, .logo:active {
@@ -407,17 +408,11 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .nav-list {
-    margin: 0 0 0 88px;
-  }
-  .nav-list-item {
-    margin-left: 50px;
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
     display: block;
   }
-  .nav-list-item:last-child {
-    margin-left: 50px;
-  }
-  .nav-list-item.current::after, .nav-list-item:hover::after {
+  .nav-list-item:not(:last-child).current::after, .nav-list-item:not(:last-child):hover::after {
     content: "";
     display: block;
     width: 100%;
@@ -427,7 +422,7 @@ body {
     background-color: var(--accent-color);
     opacity: 1;
   }
-  .nav-list-item:hover::after, .nav-list-item:active::after {
+  .nav-list-item:not(:last-child):hover::after, .nav-list-item:not(:last-child):active::after {
     opacity: 1;
   }
   .nav-list-link {
@@ -455,7 +450,7 @@ body {
   /* Contacts - Контакты */
   .contacts-list {
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 84px;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.167;
@@ -467,7 +462,7 @@ body {
     display: block;
     margin-right: 10px;
   }
-  .contacts-list-item {
+  .contacts-list-item:not(:last-child) {
     margin-bottom: 10px;
   }
   .contacts-list-link {
