@@ -157,9 +157,6 @@
         justify-content: center;
     
     }
-    // .nav-list{
-    //     margin: 0 0 0 38px;
-    // }
 
     .nav-list-item:not(:last-child){
         margin-right: 50px;
@@ -264,6 +261,10 @@
 
 .contacts-list-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.contacts-list-item{
+    margin-bottom: 10px;
 }
 
 .contacts-list-link {

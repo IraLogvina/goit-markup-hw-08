@@ -548,6 +548,9 @@ body {
   .contacts-list-item:not(:last-child) {
     margin-right: 30px;
   }
+  .contacts-list-item {
+    margin-bottom: 10px;
+  }
   .contacts-list-link {
     display: flex;
     align-items: center;
