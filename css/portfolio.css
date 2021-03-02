@@ -246,7 +246,7 @@ body {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .worktype-filters-item {
     margin-bottom: 15px;
   }
@@ -783,6 +783,4 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
-/* Оформление оверлея*/
 /*# sourceMappingURL=portfolio.css.map */
