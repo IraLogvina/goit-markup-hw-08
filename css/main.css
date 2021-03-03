@@ -1263,17 +1263,24 @@ body {
 
 .modal-form-label-policy::before {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 11px;
   border: 2px solid var(--black-color);
   border-radius: 2px;
   content: "";
   margin-right: 8px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal-form-label-policy::before {
+    width: 16px;
+    height: 15px;
+  }
+}
+
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 11px;
   background-color: var(--accent-color);
   background-image: url("../images/svg/icon-check.svg");
   background-repeat: no-repeat;
@@ -1281,6 +1288,13 @@ body {
   background-size: contain;
   border-color: var(--accent-color);
   border-radius: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-check-policy:checked + .modal-form-label-policy::before {
+    width: 16px;
+    height: 15px;
+  }
 }
 
 .modal-form-label-policy {
