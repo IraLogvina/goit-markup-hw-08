@@ -573,14 +573,23 @@ body {
 }
 
 .hero-title {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 900px;
-  line-height: 1.615;
+  line-height: 1.909;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+    font-weight: 900px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media screen and (min-devise-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
